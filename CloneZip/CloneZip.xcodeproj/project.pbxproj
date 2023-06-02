@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BA92C9F2A297D9D003796C6 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */; };
+		9BA92CA22A297DBC003796C6 /* LaunchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA92CA12A297DBC003796C6 /* LaunchViewController.storyboard */; };
 		9BE9389E2A1BA32100A5777B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9389D2A1BA32100A5777B /* AppDelegate.swift */; };
 		9BE938A02A1BA32100A5777B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9389F2A1BA32100A5777B /* SceneDelegate.swift */; };
-		9BE938A22A1BA32100A5777B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE938A12A1BA32100A5777B /* ViewController.swift */; };
-		9BE938A52A1BA32100A5777B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE938A32A1BA32100A5777B /* Main.storyboard */; };
+		9BE938A22A1BA32100A5777B /* CloneListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE938A12A1BA32100A5777B /* CloneListViewController.swift */; };
+		9BE938A52A1BA32100A5777B /* CloneListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE938A32A1BA32100A5777B /* CloneListViewController.storyboard */; };
 		9BE938A72A1BA32300A5777B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BE938A62A1BA32300A5777B /* Assets.xcassets */; };
 		9BE938AA2A1BA32300A5777B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE938A82A1BA32300A5777B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		9BA92CA12A297DBC003796C6 /* LaunchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchViewController.storyboard; sourceTree = "<group>"; };
 		9BE9389A2A1BA32100A5777B /* CloneZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE9389D2A1BA32100A5777B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BE9389F2A1BA32100A5777B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BE938A12A1BA32100A5777B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9BE938A42A1BA32100A5777B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BE938A12A1BA32100A5777B /* CloneListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneListViewController.swift; sourceTree = "<group>"; };
+		9BE938A42A1BA32100A5777B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CloneListViewController.storyboard; sourceTree = "<group>"; };
 		9BE938A62A1BA32300A5777B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BE938A92A1BA32300A5777B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BE938AB2A1BA32300A5777B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +41,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BA92C962A297CEA003796C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9BE938A62A1BA32300A5777B /* Assets.xcassets */,
+				9BE938A82A1BA32300A5777B /* LaunchScreen.storyboard */,
+				9BE938AB2A1BA32300A5777B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9BA92C972A297CF6003796C6 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				9BE9389D2A1BA32100A5777B /* AppDelegate.swift */,
+				9BE9389F2A1BA32100A5777B /* SceneDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		9BA92C982A297D34003796C6 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9BA92C9B2A297D89003796C6 /* Launch */,
+				9BA92C992A297D45003796C6 /* CloneList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9BA92C992A297D45003796C6 /* CloneList */ = {
+			isa = PBXGroup;
+			children = (
+				9BA92C9A2A297D4D003796C6 /* View */,
+			);
+			path = CloneList;
+			sourceTree = "<group>";
+		};
+		9BA92C9A2A297D4D003796C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BE938A12A1BA32100A5777B /* CloneListViewController.swift */,
+				9BE938A32A1BA32100A5777B /* CloneListViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BA92C9B2A297D89003796C6 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				9BA92C9C2A297D8D003796C6 /* View */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		9BA92C9C2A297D8D003796C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */,
+				9BA92CA12A297DBC003796C6 /* LaunchViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9BE938912A1BA32100A5777B = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +122,9 @@
 		9BE9389C2A1BA32100A5777B /* CloneZip */ = {
 			isa = PBXGroup;
 			children = (
-				9BE9389D2A1BA32100A5777B /* AppDelegate.swift */,
-				9BE9389F2A1BA32100A5777B /* SceneDelegate.swift */,
-				9BE938A12A1BA32100A5777B /* ViewController.swift */,
-				9BE938A32A1BA32100A5777B /* Main.storyboard */,
-				9BE938A62A1BA32300A5777B /* Assets.xcassets */,
-				9BE938A82A1BA32300A5777B /* LaunchScreen.storyboard */,
-				9BE938AB2A1BA32300A5777B /* Info.plist */,
+				9BA92C972A297CF6003796C6 /* Applications */,
+				9BA92C982A297D34003796C6 /* Presentation */,
+				9BA92C962A297CEA003796C6 /* Resources */,
 			);
 			path = CloneZip;
 			sourceTree = "<group>";
@@ -125,9 +187,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA92CA22A297DBC003796C6 /* LaunchViewController.storyboard in Resources */,
 				9BE938AA2A1BA32300A5777B /* LaunchScreen.storyboard in Resources */,
 				9BE938A72A1BA32300A5777B /* Assets.xcassets in Resources */,
-				9BE938A52A1BA32100A5777B /* Main.storyboard in Resources */,
+				9BE938A52A1BA32100A5777B /* CloneListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +201,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE938A22A1BA32100A5777B /* ViewController.swift in Sources */,
+				9BE938A22A1BA32100A5777B /* CloneListViewController.swift in Sources */,
 				9BE9389E2A1BA32100A5777B /* AppDelegate.swift in Sources */,
 				9BE938A02A1BA32100A5777B /* SceneDelegate.swift in Sources */,
+				9BA92C9F2A297D9D003796C6 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9BE938A32A1BA32100A5777B /* Main.storyboard */ = {
+		9BE938A32A1BA32100A5777B /* CloneListViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9BE938A42A1BA32100A5777B /* Base */,
 			);
-			name = Main.storyboard;
+			name = CloneListViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		9BE938A82A1BA32300A5777B /* LaunchScreen.storyboard */ = {
@@ -289,10 +353,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WPX8MV29XR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CloneZip/Info.plist;
+				INFOPLIST_FILE = CloneZip/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +381,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WPX8MV29XR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CloneZip/Info.plist;
+				INFOPLIST_FILE = CloneZip/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
