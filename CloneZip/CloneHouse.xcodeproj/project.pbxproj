@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		9BA92CA12A297DBC003796C6 /* LaunchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchViewController.storyboard; sourceTree = "<group>"; };
-		9BE9389A2A1BA32100A5777B /* CloneZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE9389A2A1BA32100A5777B /* CloneHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE9389D2A1BA32100A5777B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BE9389F2A1BA32100A5777B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9BE938A12A1BA32100A5777B /* CloneListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneListViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		9BE938912A1BA32100A5777B = {
 			isa = PBXGroup;
 			children = (
-				9BE9389C2A1BA32100A5777B /* CloneZip */,
+				9BE9389C2A1BA32100A5777B /* CloneHouse */,
 				9BE9389B2A1BA32100A5777B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,27 +114,27 @@
 		9BE9389B2A1BA32100A5777B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9BE9389A2A1BA32100A5777B /* CloneZip.app */,
+				9BE9389A2A1BA32100A5777B /* CloneHouse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9BE9389C2A1BA32100A5777B /* CloneZip */ = {
+		9BE9389C2A1BA32100A5777B /* CloneHouse */ = {
 			isa = PBXGroup;
 			children = (
 				9BA92C972A297CF6003796C6 /* Applications */,
 				9BA92C982A297D34003796C6 /* Presentation */,
 				9BA92C962A297CEA003796C6 /* Resources */,
 			);
-			path = CloneZip;
+			path = CloneHouse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9BE938992A1BA32100A5777B /* CloneZip */ = {
+		9BE938992A1BA32100A5777B /* CloneHouse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BE938AE2A1BA32300A5777B /* Build configuration list for PBXNativeTarget "CloneZip" */;
+			buildConfigurationList = 9BE938AE2A1BA32300A5777B /* Build configuration list for PBXNativeTarget "CloneHouse" */;
 			buildPhases = (
 				9BE938962A1BA32100A5777B /* Sources */,
 				9BE938972A1BA32100A5777B /* Frameworks */,
@@ -144,9 +144,9 @@
 			);
 			dependencies = (
 			);
-			name = CloneZip;
+			name = CloneHouse;
 			productName = CloneZip;
-			productReference = 9BE9389A2A1BA32100A5777B /* CloneZip.app */;
+			productReference = 9BE9389A2A1BA32100A5777B /* CloneHouse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,7 +164,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9BE938952A1BA32100A5777B /* Build configuration list for PBXProject "CloneZip" */;
+			buildConfigurationList = 9BE938952A1BA32100A5777B /* Build configuration list for PBXProject "CloneHouse" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -177,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9BE938992A1BA32100A5777B /* CloneZip */,
+				9BE938992A1BA32100A5777B /* CloneHouse */,
 			);
 		};
 /* End PBXProject section */
@@ -353,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WPX8MV29XR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CloneZip/Resources/Info.plist;
+				INFOPLIST_FILE = CloneHouse/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchViewController;
@@ -364,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jeongju9216.CloneZip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeongju9216.CloneHouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -381,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WPX8MV29XR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CloneZip/Resources/Info.plist;
+				INFOPLIST_FILE = CloneHouse/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchViewController;
@@ -392,7 +392,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jeongju9216.CloneZip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeongju9216.CloneHouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -403,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9BE938952A1BA32100A5777B /* Build configuration list for PBXProject "CloneZip" */ = {
+		9BE938952A1BA32100A5777B /* Build configuration list for PBXProject "CloneHouse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BE938AC2A1BA32300A5777B /* Debug */,
@@ -412,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BE938AE2A1BA32300A5777B /* Build configuration list for PBXNativeTarget "CloneZip" */ = {
+		9BE938AE2A1BA32300A5777B /* Build configuration list for PBXNativeTarget "CloneHouse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BE938AF2A1BA32300A5777B /* Debug */,
