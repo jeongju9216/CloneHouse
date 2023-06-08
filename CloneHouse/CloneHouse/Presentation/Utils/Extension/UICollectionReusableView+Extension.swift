@@ -11,4 +11,8 @@ extension UICollectionReusableView {
     static var idenfier: String {
         String(describing: self)
     }
+    
+    static var cellClassWithNib: UINib {
+        UINib(nibName: idenfier, bundle: nil)
+    }
 }

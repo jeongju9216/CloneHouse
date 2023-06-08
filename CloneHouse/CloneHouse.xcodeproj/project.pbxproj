@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B6975A32A31B56100E58D23 /* CloneListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6975A12A31B56100E58D23 /* CloneListCollectionViewCell.swift */; };
+		9B6975A42A31B56100E58D23 /* CloneListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6975A22A31B56100E58D23 /* CloneListCollectionViewCell.xib */; };
+		9B6975AE2A31BF6E00E58D23 /* CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6975AD2A31BF6E00E58D23 /* CloneApp.swift */; };
+		9B6975B22A31C51200E58D23 /* DefaultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6975B02A31C51200E58D23 /* DefaultCollectionViewCell.swift */; };
+		9B6975B32A31C51200E58D23 /* DefaultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6975B12A31C51200E58D23 /* DefaultCollectionViewCell.xib */; };
+		9B6975B82A31DD9900E58D23 /* CircleIconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6975B62A31DD9800E58D23 /* CircleIconCollectionViewCell.swift */; };
+		9B6975B92A31DD9900E58D23 /* CircleIconCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6975B72A31DD9800E58D23 /* CircleIconCollectionViewCell.xib */; };
 		9BA3E4392A2F7323001D6C49 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3E4382A2F7323001D6C49 /* UIViewController+Extension.swift */; };
 		9BA3E4422A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3E4412A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift */; };
 		9BA92C9F2A297D9D003796C6 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */; };
@@ -20,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B6975A12A31B56100E58D23 /* CloneListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneListCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B6975A22A31B56100E58D23 /* CloneListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CloneListCollectionViewCell.xib; sourceTree = "<group>"; };
+		9B6975AD2A31BF6E00E58D23 /* CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneApp.swift; sourceTree = "<group>"; };
+		9B6975B02A31C51200E58D23 /* DefaultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B6975B12A31C51200E58D23 /* DefaultCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultCollectionViewCell.xib; sourceTree = "<group>"; };
+		9B6975B62A31DD9800E58D23 /* CircleIconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIconCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B6975B72A31DD9800E58D23 /* CircleIconCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleIconCollectionViewCell.xib; sourceTree = "<group>"; };
 		9BA3E4382A2F7323001D6C49 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		9BA3E4412A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+Extension.swift"; sourceTree = "<group>"; };
 		9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -45,9 +59,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B6975A52A31BF2C00E58D23 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9B6975A72A31BF3700E58D23 /* Entity */,
+				9B6975A82A31BF3900E58D23 /* UseCase */,
+				9B6975A92A31BF3C00E58D23 /* Interface */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9B6975A62A31BF3000E58D23 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9B6975AC2A31BF4800E58D23 /* CoreData */,
+				9B6975AB2A31BF4600E58D23 /* Repository */,
+				9B6975AA2A31BF4300E58D23 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9B6975A72A31BF3700E58D23 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9B6975AD2A31BF6E00E58D23 /* CloneApp.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9B6975A82A31BF3900E58D23 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		9B6975A92A31BF3C00E58D23 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		9B6975AA2A31BF4300E58D23 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9B6975AB2A31BF4600E58D23 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9B6975AC2A31BF4800E58D23 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9B6975AF2A31C50500E58D23 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9B6975B02A31C51200E58D23 /* DefaultCollectionViewCell.swift */,
+				9B6975B12A31C51200E58D23 /* DefaultCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		9BA3E4372A2F7316001D6C49 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9B6975AF2A31C50500E58D23 /* Cell */,
 				9BA3E4402A31B2B0001D6C49 /* Extension */,
 			);
 			path = Utils;
@@ -56,6 +143,10 @@
 		9BA3E43F2A31B28F001D6C49 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				9B6975A12A31B56100E58D23 /* CloneListCollectionViewCell.swift */,
+				9B6975A22A31B56100E58D23 /* CloneListCollectionViewCell.xib */,
+				9B6975B62A31DD9800E58D23 /* CircleIconCollectionViewCell.swift */,
+				9B6975B72A31DD9800E58D23 /* CircleIconCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -101,8 +192,8 @@
 		9BA92C992A297D45003796C6 /* CloneList */ = {
 			isa = PBXGroup;
 			children = (
-				9BA3E43F2A31B28F001D6C49 /* Cells */,
 				9BA92C9A2A297D4D003796C6 /* View */,
+				9BA3E43F2A31B28F001D6C49 /* Cells */,
 			);
 			path = CloneList;
 			sourceTree = "<group>";
@@ -154,6 +245,8 @@
 			children = (
 				9BA92C972A297CF6003796C6 /* Applications */,
 				9BA92C982A297D34003796C6 /* Presentation */,
+				9B6975A52A31BF2C00E58D23 /* Domain */,
+				9B6975A62A31BF3000E58D23 /* Data */,
 				9BA92C962A297CEA003796C6 /* Resources */,
 			);
 			path = CloneHouse;
@@ -218,8 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA92CA22A297DBC003796C6 /* LaunchViewController.storyboard in Resources */,
+				9B6975B92A31DD9900E58D23 /* CircleIconCollectionViewCell.xib in Resources */,
+				9B6975A42A31B56100E58D23 /* CloneListCollectionViewCell.xib in Resources */,
 				9BE938AA2A1BA32300A5777B /* LaunchScreen.storyboard in Resources */,
 				9BE938A72A1BA32300A5777B /* Assets.xcassets in Resources */,
+				9B6975B32A31C51200E58D23 /* DefaultCollectionViewCell.xib in Resources */,
 				9BE938A52A1BA32100A5777B /* CloneListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,9 +330,13 @@
 				9BE938A22A1BA32100A5777B /* CloneListViewController.swift in Sources */,
 				9BE9389E2A1BA32100A5777B /* AppDelegate.swift in Sources */,
 				9BA3E4422A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift in Sources */,
+				9B6975B82A31DD9900E58D23 /* CircleIconCollectionViewCell.swift in Sources */,
+				9B6975AE2A31BF6E00E58D23 /* CloneApp.swift in Sources */,
 				9BE938A02A1BA32100A5777B /* SceneDelegate.swift in Sources */,
+				9B6975A32A31B56100E58D23 /* CloneListCollectionViewCell.swift in Sources */,
 				9BA92C9F2A297D9D003796C6 /* LaunchViewController.swift in Sources */,
 				9BA3E4392A2F7323001D6C49 /* UIViewController+Extension.swift in Sources */,
+				9B6975B22A31C51200E58D23 /* DefaultCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
