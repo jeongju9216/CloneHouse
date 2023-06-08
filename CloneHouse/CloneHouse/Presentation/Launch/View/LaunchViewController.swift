@@ -10,10 +10,11 @@ import UIKit
 final class LaunchViewController: UIViewController {
 
     @IBOutlet weak var versionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //todo: fetch 버전 -> CloneListVC 이동
     }
 
     override func viewDidAppear(_ animated: Bool) {
