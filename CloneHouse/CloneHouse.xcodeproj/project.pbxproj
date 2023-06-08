@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BA3E4392A2F7323001D6C49 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3E4382A2F7323001D6C49 /* UIViewController+Extension.swift */; };
+		9BA3E4422A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3E4412A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift */; };
 		9BA92C9F2A297D9D003796C6 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */; };
 		9BA92CA22A297DBC003796C6 /* LaunchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA92CA12A297DBC003796C6 /* LaunchViewController.storyboard */; };
 		9BE9389E2A1BA32100A5777B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9389D2A1BA32100A5777B /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BA3E4382A2F7323001D6C49 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9BA3E4412A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+Extension.swift"; sourceTree = "<group>"; };
 		9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		9BA92CA12A297DBC003796C6 /* LaunchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchViewController.storyboard; sourceTree = "<group>"; };
 		9BE9389A2A1BA32100A5777B /* CloneHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BA3E4372A2F7316001D6C49 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9BA3E4402A31B2B0001D6C49 /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9BA3E43F2A31B28F001D6C49 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9BA3E4402A31B2B0001D6C49 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9BA3E4382A2F7323001D6C49 /* UIViewController+Extension.swift */,
+				9BA3E4412A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		9BA92C962A297CEA003796C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +93,7 @@
 			children = (
 				9BA92C9B2A297D89003796C6 /* Launch */,
 				9BA92C992A297D45003796C6 /* CloneList */,
+				9BA3E4372A2F7316001D6C49 /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -72,6 +101,7 @@
 		9BA92C992A297D45003796C6 /* CloneList */ = {
 			isa = PBXGroup;
 			children = (
+				9BA3E43F2A31B28F001D6C49 /* Cells */,
 				9BA92C9A2A297D4D003796C6 /* View */,
 			);
 			path = CloneList;
@@ -203,8 +233,10 @@
 			files = (
 				9BE938A22A1BA32100A5777B /* CloneListViewController.swift in Sources */,
 				9BE9389E2A1BA32100A5777B /* AppDelegate.swift in Sources */,
+				9BA3E4422A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift in Sources */,
 				9BE938A02A1BA32100A5777B /* SceneDelegate.swift in Sources */,
 				9BA92C9F2A297D9D003796C6 /* LaunchViewController.swift in Sources */,
+				9BA3E4392A2F7323001D6C49 /* UIViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
