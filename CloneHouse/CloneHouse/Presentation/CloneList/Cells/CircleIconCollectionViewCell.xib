@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CircleIconCollectionViewCell" customModule="CloneHouse" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="320"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="320"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfL-GW-YSV">
+                        <rect key="frame" x="0.0" y="0.0" width="305" height="320"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-wr-VHb">
+                                <rect key="frame" x="0.0" y="0.0" width="305" height="320"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9Sf-wr-VHb" secondAttribute="bottom" id="6lC-EM-pBx"/>
+                            <constraint firstItem="9Sf-wr-VHb" firstAttribute="top" secondItem="zfL-GW-YSV" secondAttribute="top" id="8kq-PN-KZa"/>
+                            <constraint firstItem="9Sf-wr-VHb" firstAttribute="leading" secondItem="zfL-GW-YSV" secondAttribute="leading" id="EWv-vn-KZd"/>
+                            <constraint firstAttribute="trailing" secondItem="9Sf-wr-VHb" secondAttribute="trailing" id="on2-xM-uxS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zfL-GW-YSV" secondAttribute="bottom" id="Eq9-Aa-fBP"/>
+                <constraint firstAttribute="trailing" secondItem="zfL-GW-YSV" secondAttribute="trailing" id="Lmb-v2-iMz"/>
+                <constraint firstItem="zfL-GW-YSV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wCH-zy-mVX"/>
+                <constraint firstItem="zfL-GW-YSV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xqa-xe-2TB"/>
+            </constraints>
+            <size key="customSize" width="305" height="320"/>
+            <connections>
+                <outlet property="backView" destination="zfL-GW-YSV" id="4sG-NC-www"/>
+                <outlet property="iconImageView" destination="9Sf-wr-VHb" id="39T-u8-jl8"/>
+            </connections>
+            <point key="canvasLocation" x="333.58778625954199" y="114.78873239436621"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
