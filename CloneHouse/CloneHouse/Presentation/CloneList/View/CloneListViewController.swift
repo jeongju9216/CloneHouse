@@ -14,7 +14,6 @@ final class CloneListViewController: UIViewController {
     
     //MARK: - Views
     @IBOutlet weak var collectionView: UICollectionView!
-    private var searchController: UISearchController = .init()
     
     private typealias DataSource = UICollectionViewDiffableDataSource<Sections, CloneApp>
     private typealias SnapShot = NSDiffableDataSourceSnapshot<Sections, CloneApp>
@@ -22,9 +21,6 @@ final class CloneListViewController: UIViewController {
     //MARK: - Properties
     private lazy var dataSource: DataSource = setupDataSource()
     private var snapshot: SnapShot = SnapShot()
-    
-    private var isShowNewsSection = false
-    private var isSearching = false
     
     private let testAppData = [CloneApp(title: "Jetflix", description: "넷플릭스 클론 코딩 앱", version: "v1.0.0", releaseDate: "2023.06.08"),
                             CloneApp(title: "Jetflix", description: "Test", version: "Test", releaseDate: "Test"),
@@ -41,17 +37,14 @@ final class CloneListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         setupUI()
         
         initTestData()
-        
     }
     
     //MARK: - Setup
     private func setupUI() {
         setupNavigationBar()
-        setupSearchController()
         setupCollectionView()
     }
     
@@ -59,9 +52,21 @@ final class CloneListViewController: UIViewController {
         let navBarAppearance = UINavigationBarAppearance()
         //configureWithTransparentBackground는 스크롤할 때 뒤가 안 가려져서 컬러로 지정함
         navBarAppearance.backgroundColor = .systemBackground
-        navBarAppearance.shadowColor = .clear
-
         navigationController?.navigationBar.standardAppearance = navBarAppearance
+        
+        navigationController?.navigationBar.tintColor = .label
+        
+        let logoItem = UIButton(type: .custom)
+        logoItem.setImage(UIImage(named: "LogoImage"), for: .normal)
+        let leftItem = UIBarButtonItem(customView: logoItem)
+        leftItem.customView?.widthAnchor.constraint(equalToConstant: 24 * (1414.0 / 261.0)).isActive = true
+        leftItem.customView?.heightAnchor.constraint(equalToConstant: 24).isActive = true
+        navigationItem.leftBarButtonItem = leftItem
+        
+        navigationItem.rightBarButtonItems = [
+            //티스토리 블로그로 이동
+            UIBarButtonItem(image: UIImage(systemName: "t.square"), style: .plain, target: self, action: nil),
+        ]
     }
     
     private func setupCollectionView() {
@@ -77,15 +82,6 @@ final class CloneListViewController: UIViewController {
         updateCloneAppList(data: testAppData)
         
         updateCircleIconList(data: testNewsData)
-    }
-    
-    private func setupSearchController() {
-        searchController.searchBar.delegate = self
-        searchController.searchBar.placeholder = "키워드를 입력하세요."
-        searchController.obscuresBackgroundDuringPresentation = false
-        
-        navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
     }
 }
 
@@ -122,32 +118,12 @@ extension CloneListViewController {
             guard let self = self else { return defaultSection }
             
             let section = self.snapshot.sectionIdentifiers[sectionIndex]
+            print("Section: \(section)")
             switch section {
             case .news:
-                let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(80),
-                                                      heightDimension: .absolute(80))
-                let item = NSCollectionLayoutItem(layoutSize: itemSize)
-                
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: itemSize, subitems: [item])
-                group.edgeSpacing = .init(leading: .fixed(10), top: .none, trailing: .fixed(10), bottom: .none)
-
-                let section = NSCollectionLayoutSection(group: group)
-                section.orthogonalScrollingBehavior = .continuous
-                section.contentInsets = .init(top: 10, leading: 0, bottom: 10, trailing: 0)
-                
-                return section
-                
+                return createNewsSection()
             case .app:
-                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                      heightDimension: .absolute(140))
-                let item = NSCollectionLayoutItem(layoutSize: itemSize)
-                item.contentInsets = .init(top: 10, leading: 10, bottom: 10, trailing: 10)
-                
-                let group = NSCollectionLayoutGroup.vertical(layoutSize: itemSize, subitems: [item])
-                
-                let section = NSCollectionLayoutSection(group: group)
-                
-                return section
+                return createAppsSection()
             }
         }
         
@@ -187,48 +163,33 @@ extension CloneListViewController {
         let dataSource = DataSource(collectionView: collectionView, cellProvider: cellProvider)
         return dataSource
     }
-}
+    
+    private func createNewsSection() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(80),
+                                              heightDimension: .absolute(80))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: itemSize, subitems: [item])
+        group.edgeSpacing = .init(leading: .fixed(10), top: .none, trailing: .fixed(10), bottom: .none)
 
-//MARK: - UISearchBarDelegate
-extension CloneListViewController: UISearchBarDelegate {
-    //텍스트 변경
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("\(#function): \(searchText)")
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .continuous
+        section.contentInsets = .init(top: 10, leading: 0, bottom: 10, trailing: 0)
+        
+        return section
     }
     
-    //키보드 입력 시작
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        print(#function)
-        isSearching = true
+    private func createAppsSection() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                              heightDimension: .absolute(140))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = .init(top: 10, leading: 10, bottom: 10, trailing: 10)
         
-        //키보드 패딩 테스트 코드
-        collectionView.contentInset = .init(top: 0, left: 0, bottom: 300, right: 0)
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: itemSize, subitems: [item])
         
-        //View 사라지는거 테스트 코드
-        snapshot.deleteSections([.news])
-        dataSource.apply(snapshot)
-    }
-    
-    //키보드 입력 끝
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        print(#function)
-        isSearching = false
+        let section = NSCollectionLayoutSection(group: group)
         
-        //키보드 패딩 테스트 코드
-        collectionView.contentInset = .init(top: 0, left: 0, bottom: 0, right: 0)
-        
-        //View 사라지는거 테스트 코드
-        updateCircleIconList(data: testNewsData, animate: true)
-    }
-    
-    //검색 버튼
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print(#function)
-    }
-    
-    //취소 버튼
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        print(#function)
+        return section
     }
 }
 
@@ -236,14 +197,5 @@ extension CloneListViewController: UISearchBarDelegate {
 extension CloneListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(#function)
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let defaultOffset = collectionView.safeAreaInsets.top
-        let offset = scrollView.contentOffset.y + defaultOffset
-        
-        if !isSearching {
-            navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
-        }
     }
 }

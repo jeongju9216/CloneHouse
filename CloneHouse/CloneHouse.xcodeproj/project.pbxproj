@@ -18,6 +18,7 @@
 		9BA3E4422A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3E4412A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift */; };
 		9BA92C9F2A297D9D003796C6 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */; };
 		9BA92CA22A297DBC003796C6 /* LaunchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA92CA12A297DBC003796C6 /* LaunchViewController.storyboard */; };
+		9BB1D21B2A33FE5400BC06F9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1D21A2A33FE5400BC06F9 /* UIColor+Extension.swift */; };
 		9BE9389E2A1BA32100A5777B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9389D2A1BA32100A5777B /* AppDelegate.swift */; };
 		9BE938A02A1BA32100A5777B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9389F2A1BA32100A5777B /* SceneDelegate.swift */; };
 		9BE938A22A1BA32100A5777B /* CloneListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE938A12A1BA32100A5777B /* CloneListViewController.swift */; };
@@ -38,6 +39,7 @@
 		9BA3E4412A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+Extension.swift"; sourceTree = "<group>"; };
 		9BA92C9D2A297D9D003796C6 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		9BA92CA12A297DBC003796C6 /* LaunchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchViewController.storyboard; sourceTree = "<group>"; };
+		9BB1D21A2A33FE5400BC06F9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9BE9389A2A1BA32100A5777B /* CloneHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE9389D2A1BA32100A5777B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BE9389F2A1BA32100A5777B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				9BA3E4382A2F7323001D6C49 /* UIViewController+Extension.swift */,
 				9BA3E4412A31B2D2001D6C49 /* UICollectionReusableView+Extension.swift */,
+				9BB1D21A2A33FE5400BC06F9 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				9BA92C9F2A297D9D003796C6 /* LaunchViewController.swift in Sources */,
 				9BA3E4392A2F7323001D6C49 /* UIViewController+Extension.swift in Sources */,
 				9B6975B22A31C51200E58D23 /* DefaultCollectionViewCell.swift in Sources */,
+				9BB1D21B2A33FE5400BC06F9 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

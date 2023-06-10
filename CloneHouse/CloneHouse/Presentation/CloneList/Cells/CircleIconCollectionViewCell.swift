@@ -29,7 +29,7 @@ class CircleIconCollectionViewCell: UICollectionViewCell {
     private func setupUI(height: CGFloat) {
         backView.layer.masksToBounds = true
         backView.layer.cornerRadius = height / 2
-        backView.layer.borderColor = isNew ? UIColor(named: "MainColor")?.cgColor : UIColor.gray.cgColor
+        backView.layer.borderColor = isNew ? UIColor.main.cgColor : UIColor.gray.cgColor
         backView.layer.borderWidth = 3
         
         iconImageView.layer.masksToBounds = true
